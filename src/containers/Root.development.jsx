@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-import { fetchRemoteCards } from '../actions';
 
 import DevTools from './DevTools';
+import CardApp from './CardApp';
 
 export default class Root extends Component {
-    componentDidMount() {
-        this.props.store.dispatch(fetchRemoteCards());
-    }
-
     render() {
         const { store } = this.props;
 
@@ -16,6 +12,7 @@ export default class Root extends Component {
             <Provider store={store}>
                 <div className="container">
                     <DevTools />
+                    <CardApp />
                 </div>
             </Provider>
         );
