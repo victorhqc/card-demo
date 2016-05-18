@@ -3,6 +3,7 @@ var webpack = require('webpack');
 var _ = require('lodash');
 
 const baseConfig = require('./base');
+var configPath = path.join(__dirname, '/..');
 
 var config = _.merge({
     entry: './src/index.js',
@@ -24,5 +25,9 @@ config.module.loaders.push({
         presets: ['react', 'es2015']
     }
 });
+
+config.resolve.alias =  {
+    api: path.join(configPath + '/front.config.production')
+};
 
 module.exports = config;

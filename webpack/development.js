@@ -4,7 +4,7 @@ var _ = require('lodash');
 
 const baseConfig = require('./base');
 
-var apiPath = path.join(__dirname, '/../api');
+var configPath = path.join(__dirname, '/..');
 
 var config = _.merge({
     entry: './src/index.js',
@@ -16,7 +16,7 @@ var config = _.merge({
 }, baseConfig);
 
 config.resolve.alias =  {
-    api: path.join(apiPath + '/development.js')
+    api: path.join(configPath + '/front.config.development')
 };
 
 config.module.loaders.push({

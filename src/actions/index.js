@@ -1,1 +1,2 @@
-export * from './cards';
+export * from './card-statics';
+export * from './card-api';
