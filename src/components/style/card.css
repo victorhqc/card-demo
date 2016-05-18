@@ -1,0 +1,16 @@
+.card {
+    position: absolute;
+    background-color: white;
+    width: 250px;
+    height: 150px;
+    box-shadow: 0 3px 10px -7px #333;
+    border-radius: 3px;
+    padding: 30px 10px;
+    list-style: none;
+    transition: transform 500ms;
+}
+
+.card:hover {
+    transform: rotate(0deg) !importaant;
+    transition: transform 150ms;
+}

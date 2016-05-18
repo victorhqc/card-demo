@@ -10,7 +10,7 @@ export default class Root extends Component {
 
         return (
             <Provider store={store}>
-                <div className="container">
+                <div className="container app">
                     <DevTools />
                     <CardApp />
                 </div>

@@ -3,18 +3,16 @@ import CardComponent from './CardComponent';
 
 let CardListComponent = ({
     cards
-}) => {
-    console.log('cards!', cards);
-    return (
+}) => (
         <ul>
-            {cards.map(card =>
+            {cards.map((card, i) =>
                 <CardComponent
                     key={card.id}
+                    index={i}
                     {...card}
                 />
             )}
         </ul>
     )
-}
 
 export default CardListComponent;
