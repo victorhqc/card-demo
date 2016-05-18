@@ -15,6 +15,10 @@ export class CardsController {
                 {
                     id: 2,
                     text: 'Another example'
+                },
+                {
+                    id: 3,
+                    text: 'Foo Bar card'
                 }
             ]
         });

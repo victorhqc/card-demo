@@ -31,7 +31,7 @@ export default class CardComponent extends React.Component {
         const {text, index} = this.props;
 
         const style = {
-            zIndex: 999 + index,
+            zIndex: this.state.selected ? 9999 : 999 + index,
             transform: 'rotate(' + this.state.deg + 'deg)'
         };
 
